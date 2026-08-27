@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 30px;
+}
+
+.contenedor {
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.contenedor > p {
+    text-align: center;
+    color: #666;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.boton-eliminar {
+    background-color: #b02a37;
+    color: white;
+    padding: 8px 12px;
+}
+
+.boton-eliminar:hover {
+    background-color: #842029;
+}
+
+#mensaje {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: #b02a37;
+}
+
+.exito {
+    color: #146c43;
+}
+
+.totales {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.totales p {
+    margin: 8px 0;
+}

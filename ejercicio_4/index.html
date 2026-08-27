@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Sistema de Inventario</h1>
+        <p>Registra y administra los productos</p>
+        <form id="formularioProducto">
+            <label for="nombre">Nombre del producto</label>
+            <input type="text" id="nombre" placeholder="Ej: Mouse">
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" placeholder="Ej: 50000">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" placeholder="Ej: 3">
+            <label for="categoria">Categoría</label>
+            <select id="categoria">
+                <option value="">Seleccione una categoría</option>
+                <option value="Tecnología">Tecnología</option>
+                <option value="Accesorios">Accesorios</option>
+                <option value="Oficina">Oficina</option>
+                <option value="Otros">Otros</option>
+            </select>
+            <button type="submit">Agregar producto</button>
+        </form>
+        <div id="mensaje"></div>
+        <h2>Productos registrados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Valor total</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tablaProductos">
+            </tbody>
+        </table>
+        <div class="totales">
+            <p>
+                <strong>Productos registrados:</strong>
+                <span id="totalProductos">0</span>
+            </p>
+            <p>
+                <strong>Valor total del inventario:</strong>
+                $<span id="valorInventario">0</span>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
